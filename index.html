@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>architecture & interior design</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+	<div class="wrapper">	
+
+		<div class="header">
+			<h2>architecture & interior design</h2>
+		</div>
+
+		<div class="description-main-info"> 
+			<p>  architecture & interior design - is a team of architects, interior designers, and strategists based in Kyiv, Ukraine.</p>
+			<p> We call our style ‘live minimalism’.</p>
+			<p> Live minimalism is not about a 'wrap' or visual look. It refers to inner feelings, to your true self. The place you are comfortable to live in.</p>
+			<p> You will never fake the feeling of being in such a place because the live minimalism is made of natural materials and live unprocessed textures — all true, authentic, close to nature. It has memory and appreciates the past — culture, roots, archetypes.</p>
+			<p> Despite the diversity, each our project begins with the idea: to create, not copy. We don’t use fakes and work only with original brands.</p>
+			<p> Either architecture or interior —it is always a statement, the attempt to say something new in the world of design.</p>
+		</div>
+
+			<div class="nav">
+
+				<ul id="menu">
+					<li> <a href="" > MAIN PAGE</a></li>
+					<li> <a href= "#profile-box"  > PROFILE </a></li>
+					<li> <a href="#contact-info" > CONTACTS</a></li>
+				</ul>
+			</div>
+
+			<div id="profile-box">
+
+				<div class="profile-photo" id="profile-photo-1"><span>Living room</span></div>
+				<div class="profile-photo" id="profile-photo-2"><span>Bedroom</span></div>
+				<div class="profile-photo" id="profile-photo-3"><span>Office-design</span></div>
+				<div class="profile-photo" id="profile-photo-4"><span>Kitchen</span></div>
+				<div class="profile-photo" id="profile-photo-5"><span>Dining room</span></div>
+				<div class="profile-photo" id="profile-photo-6"><span>Bedroom</span></div>
+
+			</div>
+
+			<div id="footer-box"> 
+				<div id="contact-request">
+					<h2  class="contact-headline"> Order project </h2>
+
+					<div class="contact-descr"> Please fill in your details and we will contact you as soon as possiable</div>
+					<form id ="form-design">
+
+
+						<p><label for="name"> Name </label><input type="text" id="name"></p>
+						<p><label for="email"> E-mail </label><input type="email" id="email"></p>
+
+						<textarea placeholder="Enter message"> </textarea>
+
+
+						<p class="button-sections"><input type="submit" value="Send"></p>
+					</form>
+
+				</form>
+
+			</div>
+
+			<div id ="contact-info"><h2>Find us</h2>  
+				<p> 53 Vasylia Tiutiunnyka Street, office 81</p>
+				<p> Kyiv, Ukraine</p>
+				<p> +38 073 16 18 019
+				</p>
+
+				<iframe  class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.3050045644322!2d30.526618215153274!3d50.416788697671805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf3e060b8a5b%3A0x35a9b87c5cd721bc!2z0YPQuy4g0JLQsNGB0LjQu9C40Y8g0KLRjtGC0Y7QvdC90LjQutCwLCA1Mywg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1574071357209!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			</div>
+
+		</div>
+
+	</div>
+	<script>
+		$( function() {
+			$( ".profile-photo" ).on( "click", function(e) {
+
+				$(e.currentTarget).toggleClass( "profile-photo-zoom", 1000 );
+			});
+		} );
+	</script>
+
+</body>
+
+<footer></footer>
+</html>

@@ -1,0 +1,142 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-auto-rows: minmax(auto);
+  grid-gap: 0.2em;
+  background-color: white;
+  font-family: "Century Gothic";
+}
+.wrapper .header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: rgb(245 245 245);
+  text-align: center;
+  font-family: "Century Gothic";
+  grid-row: 1;
+}
+.wrapper .description-main-info {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  font-family: "Century Gothic";
+  background-color: rgb(202 200 201);
+}
+.wrapper .nav {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: rgb(245 245 245);
+}
+.wrapper .nav #menu {
+  list-style-type: none;
+  text-decoration: none;
+}
+.wrapper .nav #menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.wrapper #profile-box {
+  background-color: rgb(238 237 235);
+  padding: 10px;
+  min-height: 32vh;
+  height: 695px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-size: cover;
+  grid-gap: 10px;
+  background-position: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  font-family: "Century Gothic";
+}
+.wrapper #profile-box #profile-photo-1 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-image: url(https://i.pinimg.com/564x/3e/7d/2a/3e7d2a8042aac758e5673704b71edf8d.jpg);
+}
+.wrapper #profile-box #profile-photo-2 {
+  background-image: url(https://www.pufikhomes.com/wp-content/uploads/2017/07/small-stylish-apartment-pufikhomes-3.jpg);
+}
+.wrapper #profile-box #profile-photo-3 {
+  background-image: url(https://www.pufikhomes.com/wp-content/uploads/2017/07/small-stylish-apartment-pufikhomes-15.jpg);
+}
+.wrapper #profile-box #profile-photo-4 {
+  background-image: url(https://www.pufikhomes.com/wp-content/uploads/2017/07/small-stylish-apartment-pufikhomes-8.jpg);
+}
+.wrapper #profile-box #profile-photo-5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url(https://www.pufikhomes.com/wp-content/uploads/2017/07/small-stylish-apartment-pufikhomes-13.jpg);
+}
+.wrapper #profile-box #profile-photo-6 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url(https://i.pinimg.com/564x/0b/36/d3/0b36d348cbb92bceadefef1f7c99ee77.jpg);
+}
+.wrapper #profile-box .profile-photo {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.wrapper #profile-box .profile-photo-zoom {
+  transform: scale(1.5);
+}
+.wrapper #footer-box {
+  background-color: rgb(245 245 245);
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.2em;
+}
+.wrapper #footer-box #contact-info {
+  background-color: rgb(202 200 201);
+  padding-left: 25px;
+}
+.wrapper #footer-box #contact-info .maps {
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+.wrapper #footer-box #contact-request .contact-headline {
+  text-align: center;
+  margin-left: 250px;
+}
+.wrapper #footer-box #contact-request .contact-descr {
+  text-align: center;
+  margin-left: 250px;
+  width: 250px;
+}
+.wrapper #footer-box #contact-request #form-design {
+  margin-right: 1%;
+  text-align: center;
+}
+.wrapper #footer-box #contact-request #form-design p {
+  display: flex;
+}
+.wrapper #footer-box #contact-request #form-design label {
+  width: 25%;
+  text-align: left;
+  padding-left: 5%;
+}
+.wrapper #footer-box #contact-request #form-design input {
+  width: 70%;
+}
+.wrapper #footer-box #contact-request #form-design textarea {
+  width: 70%;
+  margin-left: 30%;
+  padding: 0;
+  height: 100px;
+}
+.wrapper #footer-box #contact-request #form-design .button-sections {
+  justify-content: flex-end;
+}
+.wrapper #footer-box #contact-request #form-design .button-sections input {
+  width: auto;
+}
